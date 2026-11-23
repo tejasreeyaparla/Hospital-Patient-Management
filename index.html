@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b3d82"><title>CarePoint | Hospital Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><div class="brand-mark">✚</div><div><strong>CarePoint</strong><small>HOSPITAL ADMIN</small></div><button class="mobile-close" id="closeNav" aria-label="Close menu">×</button></div>
+    <div class="side-label">WORKSPACE</div>
+    <nav id="mainNav" aria-label="Main navigation">
+      <button class="nav-item active" data-page="dashboard"><span>▦</span>Dashboard</button>
+      <button class="nav-item" data-page="doctors"><span>⚕</span>Doctors</button>
+      <button class="nav-item" data-page="staff"><span>♙</span>Staff</button>
+      <button class="nav-item" data-page="admission"><span>⊕</span>Patient Admission</button>
+      <button class="nav-item" data-page="records"><span>▤</span>Patient Records</button>
+      <button class="nav-item" data-page="care"><span>♡</span>Patient Care & Rounds</button>
+      <button class="nav-item" data-page="queue"><span>☷</span>Treatment Queue</button>
+      <button class="nav-item" data-page="icu"><span>✚</span>ICU Transfer</button>
+      <button class="nav-item" data-page="discharge"><span>⇥</span>Discharge & Summary</button>
+      <button class="nav-item" data-page="appointments"><span>▣</span>Appointments</button>
+      <button class="nav-item" data-page="beds"><span>▦</span>Bed Availability</button>
+      <button class="nav-item" data-page="laboratory"><span>⚗</span>Laboratory</button>
+      <button class="nav-item" data-page="pharmacy"><span>✚</span>Pharmacy</button>
+      <button class="nav-item" data-page="reports"><span>▧</span>Medical Reports</button>
+      <button class="nav-item" data-page="inventory"><span>▣</span>Inventory</button>
+      <button class="nav-item" data-page="emergency"><span>⚠</span>Emergency Management</button>
+    </nav>
+    <div class="side-label system-label">SYSTEM</div>
+    <button class="nav-item" data-page="design"><span>⌘</span>System Design & Flowcharts</button>
+    <div class="sidebar-bottom"><div class="secure-dot"></div><div><b>System operational</b><small>Local demonstration mode</small></div></div>
+  </aside>
+  <main class="main-area">
+    <header class="topbar"><button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button><div class="breadcrumb"><span>CarePoint</span><i>/</i><b id="crumb">Dashboard</b></div><div class="top-actions"><span class="live-pill"><i></i> Demo environment</span><button class="icon-btn" title="Notifications" id="alertsBtn">♧<em></em></button><div class="profile"><div class="avatar">AD</div><div><b>Admin User</b><small>Administrator</small></div><span>⌄</span></div></div></header>
+    <section class="page-wrap" id="pageContent" aria-live="polite"></section>
+    <footer class="footer">CarePoint Hospital Management System <span>•</span> Academic project demonstration <span>•</span> Data stored in this browser</footer>
+  </main>
+</div>
+<div id="modalRoot"></div><div id="toastRoot" class="toast-root" aria-live="polite"></div>
+<script src="app.js"></script>
+</body></html>
